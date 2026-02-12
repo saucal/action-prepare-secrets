@@ -1,0 +1,16 @@
+name: "Prepare secrets"
+description: ""
+inputs:
+  custom-secrets:
+    description: ""
+    required: false
+    default: ''
+  github-secrets:
+    description: ""
+    required: false
+    default: ''
+runs:
+  using: 'node16'
+  main: 'main.js'
+  pre: 'pre.js'
+
