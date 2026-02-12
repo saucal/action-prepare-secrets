@@ -7,7 +7,7 @@
 
 	if ( ! customSecrets ) {
 		console.log( 'No custom secrets provided, skipping...' );
-		core.exportVariable( 'github-secrets', githubSecrets );
+		core.exportVariable( 'custom-secrets', githubSecrets );
 		return; 
 	}
 
