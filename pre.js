@@ -23,7 +23,7 @@
 	// Mask all secrets so they don't get exposed in logs
 	for ( const key in secretsObj ) {
 		if ( secretsObj.hasOwnProperty( key ) ) {
-			core.addMask( secretsObj[key] );
+			core.setSecret( secretsObj[key] );
 		}
 	}
 
